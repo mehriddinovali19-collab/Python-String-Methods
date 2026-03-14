@@ -1,10 +1,6 @@
-username = input("Enter useername: ")
+username = input("Username kiriting: ")
 
-before_checking = username.replace("-", " ")
+# '-' ni olib tashlab, faqat harf va raqamligini tekshiramiz
+result = username.replace("-", "").isalnum()
 
-print(before_checking.isalnum())
-
-#if before_checking.isalpha():# or before_checking.isdigit:
-#    print("True")
-#else:
- #   print("False")
+print(result)
