@@ -1,2 +1,5 @@
-matn_num = input("Son va matn: ")
-print()
+text = input("Matn kiriting: ")
+
+text = text.lower()
+
+print(not text.isdigit())
